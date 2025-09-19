@@ -1,0 +1,14 @@
+import math
+
+def product_of_factorials(m, n):
+    if m > n:
+        return 0
+    product = 1
+    for num in range(m, n + 1):
+        product *= math.factorial(num)
+    return product
+
+# Test cases
+print(product_of_factorials(2, 10))  # Product of 2! to 10!
+print(product_of_factorials(4, 4))   # 4!
+print(product_of_factorials(7, 2))   # 0
