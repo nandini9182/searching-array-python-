@@ -1,0 +1,13 @@
+def product_of_evens(m, n):
+    if m > n:
+        return 0
+    product = 1
+    for num in range(m, n + 1):
+        if num % 2 == 0:
+            product *= num
+    return product
+
+# Test cases
+print(product_of_evens(2, 10))  # Expected: 3840
+print(product_of_evens(6, 6))   # Expected: 6
+print(product_of_evens(10, 2))  # Expected: 0
