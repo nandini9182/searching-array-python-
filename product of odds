@@ -1,0 +1,13 @@
+def product_of_odds(m, n):
+    if m > n:
+        return 0
+    product = 1
+    for num in range(m, n + 1):
+        if num % 2 == 1:
+            product *= num
+    return product
+
+# Test cases
+print(product_of_odds(2, 10))  # Expected: 945
+print(product_of_odds(4, 3))   # Expected: 0
+print(product_of_odds(7, 2))   # Expected: 0
