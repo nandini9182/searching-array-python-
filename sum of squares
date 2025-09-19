@@ -1,0 +1,9 @@
+def sum_of_squares(m, n):
+    if m > n:
+        return 0
+    return sum(i**2 for i in range(m, n + 1))
+
+# Test cases
+print(sum_of_squares(2, 10))  # Expected: 2^2 + ... + 10^2 = 2^2+3^2+...+10^2
+print(sum_of_squares(6, 6))   # Expected: 36
+print(sum_of_squares(10, 2))  # Expected: 0
