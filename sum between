@@ -1,0 +1,10 @@
+def sum_between(m, n):
+    if m > n:
+        return 0
+    total = sum(range(m, n + 1))
+    return total
+
+# Test cases
+print(sum_between(2, 10))  # Expected: 54
+print(sum_between(6, 6))   # Expected: 6
+print(sum_between(10, 2))  # Expected: 0
